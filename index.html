@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Shopping Website</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!--header Section-->
+    <nav class="navbar navbar-expand-lg bg-dark " id="header">
+        <a class="navbar-brand" href="#">My Shopping Website</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Shop</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown">
+                        Category
+
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Furniture</a>
+                        <a class="dropdown-item" href="#">Daily Products</a>
+                        <a class="dropdown-item" href="#">Electronics</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+            <span class="navbar-text">
+            <button data-target="#Registermodel" data-toggle="modal" class="btn btn-light btn-sm"><i class="bi bi-person-add"></i> Register</button>
+            <button class="btn btn-light btn-sm" data-target="#Loginmodal" data-toggle="modal"><i class="bi bi-box-arrow-in-right"></i> Login</button>
+          </span>
+        </div>
+    </nav>
+    <!-- End of header Section-->
+
+    <!--  hero Section-->
+    <div class="jumbotron bg-dark text-light" id="hero">
+        <div class="row align-items-center">
+            <div class="col-md-6 text-center">
+                <h1 class="display-4">Special Discount! Diwali Offer</h1>
+                <h2><b>Check Category - </b><span id="changetext"></span></h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo at mollitia eaque.</p>
+                <button class="btn btn-secondary"><i class="bi bi-cart4"></i> Shop now</button>
+            </div>
+            <div class="col-md-6 text-center">
+                <img src="images/background.jpg" alt="Diwali Offer" class="img-fluid">
+            </div>
+        </div>
+    </div>
+
+    <!--  End of hero Section-->
+
+    <!--  Rating Section-->
+    <div class="container" id="Rating">
+        <h1 class="sectionhead">Our <span id="sectionname">Ratings</span> </h1>
+        <hr width="280px" class="bg-danger">
+        <div class="row mt-5">
+            <div class="col-md-3">
+                <div class="card text-center">
+                    <div class="cardbody">
+                        <img src="images/f.png" class="img-fluid">
+                    </div>
+                    <div class="card-footer text-center">
+                        <h3>Facebook 4.8</h3>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-half"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card text-center">
+                    <div class="cardbody">
+                        <img src="images/g.png" class="img-fluid">
+                    </div>
+                    <div class="card-footer text-center">
+                        <h3>Google 5</h3>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card text-center">
+                    <div class="cardbody">
+                        <img src="images/g.png" class="img-fluid">
+                    </div>
+                    <div class="card-footer text-center">
+                        <h3>Google 5</h3>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card text-center">
+                    <div class="cardbody">
+                        <img src="images/i.png" class="img-fluid">
+                    </div>
+                    <div class="card-footer text-center">
+                        <h3>Instagram 5</h3>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--  End of Rating Section-->
+
+    <!--   product Section-->
+    <div class="container" id="product">
+
+        <h1 class="sectionhead mt-5">Our <span id="sectionname">Products</span> </h1>
+        <hr width="280px" class="bg-danger">
+        <!--   T Sirt Section-->
+
+        <div class="row my-3 ">
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="images/t1.jpeg" class="img-fluid" id="prodimag">
+                        <div class="text-center">
+                            <h4>T Shirt 1</h4>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-half"></i>
+                        </div>
+                        <div class="mt-4">
+                            <span id="price">Price -$140</span>
+                            <span><img src="images/add.png" width="35px" style="float: right;"></span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!--   product 2-->
+
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="images/t2.jpeg" class="img-fluid" id="prodimag">
+                        <div class="text-center">
+                            <h4>T Shirt 2</h4>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-half"></i>
+                        </div>
+                        <div class="mt-4">
+                            <span id="price">Price -$50</span>
+                            <span><img src="images/add.png" width="35px" style="float: right;"></span>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--   product 3-->
+
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="images/t3.avif" class="img-fluid" id="prodimag">
+                        <div class="text-center">
+                            <h4>T Shirt 3</h4>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-half"></i>
+                        </div>
+                        <div class="mt-4">
+                            <span id="price">Price -$200</span>
+                            <span><img src="images/add.png" width="35px" style="float: right;"></span>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!--   product 4-->
+
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="images/t4.jpg" class="img-fluid" id="prodimag">
+                        <div class="text-center">
+                            <h4>T Shirt 4</h4>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-half"></i>
+                        </div>
+                        <div class="mt-4">
+                            <span id="price">Price -$130</span>
+                            <span><img src="images/add.png" width="35px" style="float: right;"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <!--   jeans Section-->
+
+        <div class="row" id="jean">
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="images/j6.webp" class="img-fluid" id="prodimag">
+                        <div class="text-center">
+                            <h4>Jeans 1</h4>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-half"></i>
+                        </div>
+                        <div class="mt-4">
+                            <span id="price">Price -$160</span>
+                            <span><img src="images/add.png" width="35px" style="float: right;"></span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!--   product 2-->
+
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="images/j7.jpeg" class="img-fluid" id="prodimag">
+                        <div class="text-center">
+                            <h4>Jeans 2</h4>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-half"></i>
+                        </div>
+                        <div class="mt-4">
+                            <span id="price">Price -$150</span>
+                            <span><img src="images/add.png" width="35px" style="float: right;"></span>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--   product 3-->
+
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="images/j5.webp" class="img-fluid" id="prodimag">
+                        <div class="text-center">
+                            <h4>Jeans 3</h4>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-half"></i>
+                        </div>
+                        <div class="mt-4">
+                            <span id="price">Price -$200</span>
+                            <span><img src="images/add.png" width="35px" style="float: right;"></span>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!--   product 4-->
+
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="images/j3.jpeg" class="img-fluid" id="prodimag">
+                        <div class="text-center">
+                            <h4>Jeans 4</h4>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-half"></i>
+                        </div>
+                        <div class="mt-4">
+                            <span id="price">Price -$300</span>
+                            <span><img src="images/add.png" width="35px" style="float: right;"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <!--  End of Product Section-->
+
+    <!--  About us Section-->
+    <div class="container m">
+        <h1 class="sectionhead mt-5">About <span id="sectionname">us</span> </h1>
+        <hr width="280px" class="bg-danger">
+        <div class="row my-5 align-items-center">
+            <div class="col-md-6">
+                <img src="images/bg.jpg" class="img-fluid">
+            </div>
+            <div class="col-md-6  text-justify">
+                <h3>Ecommerce App</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor facilis odit provident quod maiores assumenda error nemo pariatur obcaecati magnam nulla, ipsa, ex dignissimos voluptate reiciendis porro consectetur voluptas perferendis.</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore perspiciatis nisi quam optio nostrum tempore praesentium commodi repellendus itaque est quia, ab accusantium et iste, velit, distinctio veniam suscipit labore.</p>
+            </div>
+        </div>
+
+    </div>
+    <!--  End of About us Section-->
+
+    <!--  Slick slider Section-->
+    <h1 class="sectionhead mt-5">Our <span id="sectionname">Shoes Collctions</span> </h1>
+    <hr width="300px" class="bg-danger mb-5">
+    <div class="slider">
+
+        <div><img src="images/s1.jpg " alt=" " class="img-fluid "></div>
+        <div><img src="images/s2.jpeg " alt=" " class="img-fluid "></div>
+        <div><img src="images/s3.jpeg " alt=" " class="img-fluid "></div>
+        <div><img src="images/s4.jpg " alt=" " class="img-fluid "></div>
+        <div><img src="images/s5.jpg " alt=" " class="img-fluid "></div>
+        <div><img src="images/s6.jpg " alt=" " class="img-fluid "></div>
+        <div><img src="images/s7.jpg " alt=" " class="img-fluid "></div>
+
+
+
+    </div>
+
+    <!--  End of Slick slider Section-->
+
+    <!--  Contact us Section-->
+    <div class="container " id="contact">
+        <div class="row ">
+            <div class="col-md-5 col-sm-6 col-xs-12 ">
+                <h4 class="text-center">Contact Us</h4>
+                <hr width="250px" class="bg-danger ">
+                <ul>
+                    <li><i class="bi bi-geo-alt-fill"></i></i> At. Post Waghave, Tal-Panhala, Dist-Kolhapur</li>
+                    <li><i class="bi bi-envelope-at-fill"></i> kkaruna7777@gmail.com</li>
+                    <li><i class="bi bi-telephone-fill"></i></i> +91-798687715</li>
+                </ul>
+            </div>
+            <div class="col-md-7 col-sm-6 col-xs-12">
+                <h2>Feedback</h2>
+                <div class="mb-4 small">
+                    Please provide your feedback in the form below
+                </div>
+                <form name="feedback_form" id="feedback_form" method="post">
+                    <label>How do you rate your overall experience?</label>
+                    <div class="mb-3 d-flex flex-row py-1">
+                        <div class="form-check mr-3">
+                            <input class="form-check-input" type="radio" name="rating" id="rating_bad" value="bad">
+                            <label class="form-check-label" for="rating_bad">
+    Bad
+  </label>
+                        </div>
+
+                        <div class="form-check mx-3">
+                            <input class="form-check-input" type="radio" name="rating" id="rating_good" value="good">
+                            <label class="form-check-label" for="rating_good">
+    Good
+  </label>
+                        </div>
+
+                        <div class="form-check mx-3">
+                            <input class="form-check-input" type="radio" name="rating" id="rating_excellent" value="excellent">
+                            <label class="form-check-label" for="rating_excellent">
+    Excellent!
+  </label>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <label class="form-label" for="feedback_comments">Comments:</label>
+                        <textarea class="form-control" required rows="6" name="comments" id="feedback_comments" style="resize: none;"></textarea>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label class="form-label" for="feedback_name">Your Name:</label>
+                            <input type="text" required name="name" class="form-control" id="feedback_name" />
+                        </div>
+
+                        <div class="col mb-4">
+                            <label class="form-label" for="feedback_email">Email:</label>
+                            <input type="email" name="email" required class="form-control" id="feedback_email" />
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-success btn-lg">Post</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <!--  End of Contact us Section-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--------------Registration----------------->
+
+    <div class="modal " id="Registermodel ">
+        <div class="modal-dialog ">
+            <div class="modal-content ">
+                <div class="modal-header ">
+                    <h2>Registration Form</h2>
+                </div>
+                <div class="modal-body ">
+                    <form action=" ">
+                        <input type="text " placeholder="Fullname " class="form-control ">
+                        <input type="email " placeholder="Email Id " class="form-control ">
+                        <input type="password " placeholder="Password " class="form-control ">
+                        <input type="tel " placeholder="Contact " class="form-control ">
+                        <button class="btn btn-success ">Register</button>
+                    </form>
+                    <p class="mt-2 ">Already have an Account?
+                        <a href="#Loginmodal " data-toggle="modal " data-dismiss="modal ">Sign in</a>
+                    </p>
+
+                </div>
+                <div class="modal-footer ">
+                    <button class="btn btn-danger " data-dismiss="modal ">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--------------End Registration----------------->
+
+    <!--------------Login----------------->
+    <div class="modal " id="Loginmodal ">
+        <div class="modal-dialog ">
+            <div class="modal-content ">
+                <div class="modal-header ">
+                    <h2>Login Form</h2>
+                </div>
+                <div class="modal-body ">
+                    <form action=" ">
+                        <input type="email " placeholder="Email Id " class="form-control ">
+                        <input type="password " placeholder="Password " class="form-control ">
+                        <button class="btn btn-success ">Login</button>
+                    </form>
+
+                    <p class="mt-2 ">Don't have an Account?
+                        <a href="#Registermodel " data-toggle="modal " data-dismiss="modal ">Sign up</a>
+                    </p>
+                </div>
+                <div class="modal-footer ">
+                    <button class="btn btn-danger " data-dismiss="modal ">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--------------End Login----------------->
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js " integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj " crossorigin="anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.5.2/jquery-migrate.min.js " integrity="sha512-BzvgYEoHXuphX+g7B/laemJGYFdrq4fTKEo+B3PurSxstMZtwu28FHkPKXu6dSBCzbUWqz/rMv755nUwhjQypw==" crossorigin=" anonymous
+        " referrerpolicy="no-referrer "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js " integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin=" anonymous " referrerpolicy="no-referrer "></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js " integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js " integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+ " crossorigin="anonymous "></script>
+
+    <script>
+        $('.slider').slick({
+            dots: true,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 4,
+            slidesToScroll: 4,
+            autoplay: true,
+            autoplaySpeed: 400,
+            responsive: [{
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                        infinite: true,
+                        dots: true
+                    }
+                }, {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
+                }, {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+                // You can unslick at a given breakpoint now by adding:
+                // settings: "unslick "
+                // instead of a settings object
+            ]
+        });
+    </script>
+</body>
+
+</html>
+
+</html>
+
+</html>
